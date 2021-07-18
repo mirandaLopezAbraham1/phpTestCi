@@ -3,4 +3,12 @@
     <testsuite name="Test directory">
         <directory>./Tests/</directory>
     </testsuite>
+    <filter>
+        <whitelist>
+            <directory>./</directory>
+            <exclude>
+                <directory>./Tests</directory>
+            </exclude>
+        </whitelist>
+    </filter>
 </phpunit>

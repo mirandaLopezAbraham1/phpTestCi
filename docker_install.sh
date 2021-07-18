@@ -16,7 +16,3 @@ apt-get install git -yqq
 curl --location --output /usr/local/bin/phpunit "https://phar.phpunit.de/phpunit.phar"
 chmod +x /usr/local/bin/phpunit
 
-# Install mysql driver
-# Here you can install any other extension that you need
-docker-php-ext-install pdo_mysql
-# docker-php-ext-install pdo_pgsql
