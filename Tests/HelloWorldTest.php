@@ -1,5 +1,5 @@
 <?php
-require_once ('PHPUnit/Framework/TestCase.php');
+use PHPUnit\Framework\TestCase;
 class HelloWorldTest extends PHPUnit_Framework_TestCase
 {
     /**
