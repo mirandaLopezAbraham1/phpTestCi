@@ -14,26 +14,26 @@ class HelloWorldTest extends TestCase
         $this->pdo->query("CREATE TABLE hello (what VARCHAR(50) NOT NULL)");
     }
 
-    public function tearDown()
+    public function tearDown(): void
     {
         $this->pdo->query("DROP TABLE hello");
     }
 
-    public function testHelloWorld()
+    public function testHelloWorld(): void
     {
         $helloWorld = new HelloWorld($this->pdo);
 
         $this->assertEquals('Hello World', $helloWorld->hello());
     }
 
-    public function testHello()
+    public function testHello(): void
     {
         $helloWorld = new HelloWorld($this->pdo);
 
         $this->assertEquals('Hello Bar', $helloWorld->hello('Bar'));
     }
 
-    public function testWhat()
+    public function testWhat(): void
     {
         $helloWorld = new HelloWorld($this->pdo);
 
