@@ -9,6 +9,7 @@ set -xe
 apt-get update -yqq
 apt-get install git -yqq
 apt-get install libpq-dev
+apt-get install utils
 
 # Install phpunit, the tool that we will use for testing
 curl --location --output /usr/local/bin/phpunit "https://phar.phpunit.de/phpunit.phar"
