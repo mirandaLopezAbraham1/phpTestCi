@@ -9,7 +9,9 @@ class HelloWorldTest extends TestCase
 
     public function setUp(): void
     {
-        $this->pdo = new PDO($GLOBALS['db_dsn'], $GLOBALS['db_username'], $GLOBALS['db_password']);
+        
+        //$this->pdo = new PDO($GLOBALS['db_dsn'], $GLOBALS['db_username'], $GLOBALS['db_password']);
+        $this->pdo = new PDO('mysql:dbname=hello_world_test;host=localhost', 'root', '');
         $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $this->pdo->query("CREATE TABLE hello (what VARCHAR(50) NOT NULL)");
     }

@@ -8,9 +8,9 @@ set -xe
 # Install git (the php image doesn't have it) which is required by composer
 apt-get update -yqq
 apt-get install git -yqq
-apt-get install libpq-dev
-apt-get install -y apt-utils
-apt-get install -y curl
+# apt-get install libpq-dev
+# apt-get install -y apt-utils
+# apt-get install -y curl
 
 # Install phpunit, the tool that we will use for testing
 curl --location --output /usr/local/bin/phpunit "https://phar.phpunit.de/phpunit.phar"
@@ -19,4 +19,4 @@ chmod +x /usr/local/bin/phpunit
 # Install mysql driver
 # Here you can install any other extension that you need
 docker-php-ext-install pdo_mysql
-docker-php-ext-install pdo_pgsql
+# docker-php-ext-install pdo_pgsql
