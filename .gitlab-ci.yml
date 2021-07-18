@@ -15,8 +15,6 @@ build-job:       # This job runs in the build stage, which runs first.
   stage: build
   script:
     - echo "Compile ......." 
-  services:
-    -mysql: 5.7
     
 
 
