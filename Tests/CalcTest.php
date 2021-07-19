@@ -13,7 +13,7 @@ class CalcTest extends TestCase
     public function test_sum()
     {
         $result = $this->calc->sum(1, 2);
-        $this->assertEquals(3, $result);
+        $this->assertEquals(4, $result);
         $this->assertIsInt($result);
     }
     public function test_res()
